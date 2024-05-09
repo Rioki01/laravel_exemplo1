@@ -6,10 +6,10 @@
 
     <div class="menu">
         <ul>
-            <li><a href="{{ route('site.index') }}">Principal</a></li>
-            <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-            <li><a href="{{ route('site.contato') }}">Contato</a></li>
-            <li><a href="{{ route('site.login') }}">Login</a></li>
+            <b><li><a href="{{ route('site.index') }}">ÍNDICE</a></li>
+            <li><a href="{{ route('site.sobrenos') }}">SOBRE-NOS</a></li>
+            <li><a href="{{ route('site.contato') }}">CONTATO</a></li>
+            <li><a href="{{ route('site.login') }}">LOGIN</a></li></b>
         </ul>
     </div>
 </div>
