@@ -1,61 +1,35 @@
-<style>
-body{
-    background-color:#c9edff;
-    text-align: center;
-} 
+@extends('site.layouts.basico')
 
-ul {
-  list-style-type: none;
-  display: inline-block;
-  border-radius:15px; 
-  margin: 5;
-  padding: 5;
-  overflow: hidden;
-  background-color: #6eb5da;
-}
+@section('titulo', 'Sobre Nós')
 
-li {
-  float: left;
-}
+@section('conteudo')
+    <div class="conteudo-pagina">
+        <div class="titulo-pagina">
+            <h1>Olá, eu sou o Super Gestão</h1>
+        </div>
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  text-align:center;
-}
+        <div class="informacao-pagina">
+            <p>O Super Gestão é o sistema online de controle administrativo que pode transformar e potencializar os negócios da sua empresa.</p>
+            <p>Desenvolvido com a mais alta tecnologia para você cuidar do que é mais importante, seus negócios!</p>
+        </div>
+    </div>
 
-li a:hover {
-  background-color: #61a6ca;
-}
-
-p {
-    text-align: center;
-    background-color:#b2e1ff;
-    margin: 10px 0px 20px;
-    border-radius:15px; 
-}
-h3{
-    color: #419ad2;
-    font-size: 30px;
-}
-</style>
-
-<div><h3>Sobre Nos</h3>
-</div>
-<ul>
-  <li><a href="localhost:8000/">Inicio</a></li>
-  <li><a href="localhost:8000/contato">Contato</a></li>
-  <li><a href="localhost:8000/sobre-nos">Sobre Nos</a></li>
-</ul> 
-<div><p>Quem somos?</p>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel omnis! Repudiandae, at. Cupiditate sit laborum doloribus. Delectus eveniet cumque, qui sed dolorum nobis deleniti maiores nisi ab ullam explicabo?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel omnis! Repudiandae, at. Cupiditate sit laborum doloribus. Delectus eveniet cumque, qui sed dolorum nobis deleniti maiores nisi ab ullam explicabo?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel omnis! Repudiandae, at. Cupiditate sit laborum doloribus. Delectus eveniet cumque, qui sed dolorum nobis deleniti maiores nisi ab ullam explicabo?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel omnis! Repudiandae, at. Cupiditate sit laborum doloribus. Delectus eveniet cumque, qui sed dolorum nobis deleniti maiores nisi ab ullam explicabo?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel omnis! Repudiandae, at. Cupiditate sit laborum doloribus. Delectus eveniet cumque, qui sed dolorum nobis deleniti maiores nisi ab ullam explicabo?
-    </p>
-</div>
+    <div class="rodape">
+        <div class="redes-sociais">
+            <h2>Redes sociais</h2>
+            <img src="{{ asset('img/facebook.png') }}">
+            <img src="{{ asset('img/linkedin.png') }}">
+            <img src="{{ asset('img/youtube.png') }}">
+        </div>
+        <div class="area-contato">
+            <h2>Contato</h2>
+            <span>(11) 3333-4444</span>
+            <br>
+            <span>supergestao@dominio.com.br</span>
+        </div>
+        <div class="localizacao">
+            <h2>Localização</h2>
+            <img src="{{ asset('img/mapa.png') }}">
+        </div>
+    </div>
+@endsection

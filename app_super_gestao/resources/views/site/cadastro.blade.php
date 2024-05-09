@@ -1,26 +1,25 @@
 @extends('site.layouts.basico')
 <!-- Utiliza o layout basico criado em layouts. -->
-@section('titulo', $titulo)
+@section('titulo', 'Cadastro')
 <!-- Passa o titulo como conteudo, via blade('') e controller($).-->
 
 @section('conteudo')
-<!-- Tudo abaixo deste section, é o layout principal da pagina contato. -->
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
-        <h1>Entre em contato conosco</h1>
+            <h1>Cadastro</h1>
         </div>
 
         <div class="informacao-pagina">
-            <div class="contato-principal">
-                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta'])
+            <div class="login-principal">
+                @component('site.layouts._components.form_cadastro', ['classe' => 'borda-preta'])
                 <!-- Componente criado de forms na pasta _components -->
                 <!-- Todos class no forms vao ser substituidas por 'borda-preta' -->
-                <p>A nossa equipe analisará a sua mensagem e retornaremos o mais brevemente possível</p>
-                <p>Nosso tempo médio de resposta é de 48 horas</p>
+                <p>Realize aqui seu Cadastro!</p>
                 @endcomponent
             </div>
         </div>
     </div>
+
 
     <div class="rodape">
         <div class="redes-sociais">
